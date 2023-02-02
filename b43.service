@@ -1,0 +1,11 @@
+
+[Unit]
+Description=Load b43 module on boot
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/modprobe b43
+
+[Install]
+WantedBy=multi-user.target
+
